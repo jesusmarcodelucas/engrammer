@@ -1,0 +1,38 @@
+{
+    "title": "Engrammer",
+    "summary": "An autoencoder for 3 bit 24 length sequences using a Liquid Time Constant RNN",
+    "description": [
+        "engrammer is an application using the DEEPaaS API.\n",
+        "An autoencoder for 3 bit 24 length sequences using a Liquid Time Constant RNN"
+    ],
+    "keywords": [
+        "docker",
+        "api-v2"
+    ],
+    "license": "MIT",
+    "date_creation": "2024-09-17",
+    "dataset_url": "http://add-some-url-pointing-to-your-dataset.com",
+    "sources": {
+		"dockerfile_repo": "https://github.com/jesusmarcodelucas/engrammer/engrammer",
+		"docker_registry_repo": "ai4oshub/engrammer",
+		"code": "https://github.com/jesusmarcodelucas/engrammer/engrammer",
+		"ai4_template": "ai4-template/2.1.5"
+    },
+    "continuous_integration": {
+        "build_status_badge": "https://jenkins.services.ai4os.eu/buildStatus/icon?job=AI4OS-hub/engrammer/main",
+        "build_status_url": "https://jenkins.services.ai4os.eu/job/AI4OS-hub/job/engrammer/job/main/"
+    },
+    "tosca": [
+        {
+            "title": "Mesos (CPU)",
+            "url": "https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-marathon-webdav.yml",
+            "inputs": [
+                "rclone_conf",
+                "rclone_url",
+                "rclone_vendor",
+                "rclone_user",
+                "rclone_pass"
+            ]
+        }
+    ]
+}
