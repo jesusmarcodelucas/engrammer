@@ -1,5 +1,5 @@
 # Engrammer
-[![Build Status](https://jenkins.services.ai4os.eu/buildStatus/icon?job=AI4OS-hub/engrammer/main)](https://jenkins.services.ai4os.eu/job/AI4OS-hub/job/engrammer/job/main/)
+[![Build Status](https://jenkins.services.ai4os.eu/buildStatus/icon?job=AI4OS-hub/engrammer/dev)](https://jenkins.services.ai4os.eu/job/AI4OS-hub/job/engrammer/job/dev/)
 
 An autoencoder for 3 bit 24 length sequences using a Liquid Time Constant RNN
 
